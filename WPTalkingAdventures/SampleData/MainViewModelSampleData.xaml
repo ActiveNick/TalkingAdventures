@@ -1,0 +1,14 @@
+﻿<vm:GameCollectionViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:WPTalkingAdventures">
+
+    <vm:GameCollectionViewModel.Games>
+        <vm:GameViewModel Title="Adventure" FileName="Advent.z5" Description="The classic original text adventure that spawned an entire genre."/>
+        <vm:GameViewModel Title="Pirate Adventure" FileName="PIRATE.z5" Description="Only by exploring this strange island will you be able to uncover the clues necessary to lead you to your elusive goal -- recovering the lost treasures of Long John Silver."/>
+        <vm:GameViewModel Title="Zork I: The Great Underground Empire" FileName="ZORK1.Z5" Description="Discover the 'Great Underground Empire' and find out how gruesome a 'Grue' is!"/>
+        <vm:GameViewModel Title="Zork II: The Wizard of Frobozz" FileName="ZORK2.Z5" Description="Enter the realm of the Wizard of Frobozz, in a long hidden region of the Empire. Adventure galore awaits you!"/>
+        <vm:GameViewModel Title="Zork III: The Dungeon Master" FileName="ZORK3.Z5" Description="Enter the deepest, most mysterious parts of the realm and meet the Dungeon Master, who possibly holds the solution to all!"/>
+    </vm:GameCollectionViewModel.Games>
+
+</vm:GameCollectionViewModel>

@@ -1,0 +1,36 @@
+﻿<local:BaseWP7Screen x:Class="WPTalkingAdventures.FrotzControls.WP7Screen_Mango"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WPTalkingAdventures.FrotzControls"
+    xmlns:slmachine="clr-namespace:SLMachine"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition x:Name="gHeader" Height="16" />
+            <RowDefinition x:Name="gStory" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" x:Name="tbInput" KeyDown="tbInput_KeyDown" Margin="0" TextChanged="tbInput_TextChanged" />
+
+        <Border x:Name="bHeader" Grid.Row="1" Background="Red">
+            <TextBlock x:Name="tbHeader" FontFamily="Courier New" TextWrapping="NoWrap" />
+        </Border>
+        <ScrollViewer Grid.Row="2" x:Name="svStory">
+            <StackPanel x:Name="spStory" />
+        </ScrollViewer>
+
+        <local:SaveSelection x:Name="saveSelection" Visibility="Collapsed" Grid.RowSpan="3" />
+        <local:RestoreSelection x:Name="restoreSelection" Visibility="Collapsed" Grid.RowSpan="3" />
+
+    </Grid>
+</local:BaseWP7Screen>
+
+
